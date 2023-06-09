@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    margin: 10px;
+    position: relative;
+}
+
+nav a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #FFF;
+}
+
+nav a:hover:before {
+    transform: scaleX(1);
+    background-color: #FF5500;
+}
+
+.section {
+    padding: 50px;
+    margin-top: 80px;
+}
+
+.j-section {
+    background-color: #4B68B8;
+    color: white;
+}
+
+.j-section h1 {
+    font-size: 2.1em;
+    text-align: center;
+}
+
+.projects-section {
+    background-color: #FFF;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+}
+
+.image-gallery img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-gallery img:not(:first-child) {
+    transform: translateX(100%);
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-item:hover .image-gallery img {
+    opacity: 0.2;
+}
+
+.project-item:hover .project-description {
+    transform: translateY(0%);
+}
+
+.project-item {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover {
+    transform: scale(1.06);
+}
+
+.project-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover .project-description {
+    transform: translateY(0%);
+}
+
+.project-item h3 {
+    text-decoration: underline;
+}
+
+.project-description p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.github-link {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    text-decoration: none;
+}
+
+.github-link img {
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+}
+
+.skills-section {
+    background-color: #4B68B8;
+    color: white;
+    padding: 50px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skill-description {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.btnMail {
+    background-color: #ff5500;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btnMail a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.btnMail a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.btnMail:hover {
+    background-color: #d44400;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-container img {
+    width: 40px;
+    height: 40px;
+}
+
+.btnGoUp {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnGoUp:hover {
+    background-color: #555;
+}
