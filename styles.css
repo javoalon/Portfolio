@@ -218,7 +218,8 @@ nav a:hover:before {
     transition: background-color 0.3s ease-in-out;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
+    z-index: 999;
 }
 
 .btnMail a {
@@ -244,19 +245,4 @@ footer {
 .logo-container img {
     width: 40px;
     height: 40px;
-}
-
-.btnGoUp {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btnGoUp:hover {
-    background-color: #555;
 }
