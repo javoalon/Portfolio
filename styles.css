@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
 * {
     font-family: 'Inter', sans-serif;
 }
 
 body {
-    background-color: #4B68B8;
+    background-color: #034371;
     color: #333;
     margin: 0;
 }
@@ -55,21 +56,33 @@ nav a:hover:before {
 
 .section {
     padding: 50px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .j-section {
-    background-color: #4B68B8;
     color: white;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    margin: 0;
 }
 
 .j-section h1 {
-    font-size: 2.1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 6.5em;
+    margin-left: 3.5rem;
     text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.j-section h2 {
+    margin-right: 3.5rem;
 }
 
 .projects-section {
-    background-color: #FFF;
+    background-color: #004B80;
+    color: #fff;
 }
 
 .projects-section h2 {
@@ -112,6 +125,7 @@ nav a:hover:before {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .project-item:hover .image-gallery img {
@@ -173,7 +187,6 @@ nav a:hover:before {
 }
 
 .skills-section {
-    background-color: #4B68B8;
     color: white;
     padding: 50px;
     margin-top: 80px;
@@ -192,8 +205,8 @@ nav a:hover:before {
 }
 
 .skill-card {
-    background-color: #fff;
-    color: #333;
+    background-color: #333;
+    color: #fff;
     border-radius: 8px;
     padding: 20px;
     margin: 15px;
