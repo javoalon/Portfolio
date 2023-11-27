@@ -1,0 +1,58 @@
+<div class="left-column" *ngIf="!isMobile">
+    <section class="selectLang">
+        <img src="assets/images/eng.png" alt="English" class="lang-flag">
+        <label class="switch" (click)="toggleLanguage()">
+            <input type="checkbox" (click)="toggleLanguage()">
+            <span class="slider round"></span>
+        </label>
+        <img src="assets/images/esp.png" alt="Español" class="lang-flag">
+    </section>
+    <h1>Javier Alonso<span style="color: #14a3b6;">.</span></h1>
+    <h2><span style="color: #14a3b6;">front-end</span> dev</h2>
+    <ul>
+        <li (click)="scrollToSection('projects')">{{'projects' | translate}}</li>
+        <li (click)="scrollToSection('technologies')">{{'technologies' | translate}}</li>
+        <li (click)="scrollToSection('aboutMe')">{{'aboutMe' | translate}}</li>
+    </ul>
+    <section class="social-media">
+        <a target="_blank" href="https://www.linkedin.com/in/javier-alonso-502a59205/"><img
+                src="assets/svgs/LinkedIn.svg" alt="LinkedIn"></a>
+        <a target="_blank" href="https://github.com/jjavieralonso"><img src="assets/svgs/GitHub.svg" alt="GitHub"></a>
+        <a><img src="assets/images/Mail.png" alt="e-mail"></a>
+    </section>
+</div>
+
+
+<div *ngIf="isMobile" class="mobile">
+    <label for="check" class="burger-label" *ngIf="isMobile" (change)="toggleMenu()" [(ngModel)]="menuVisible">
+        <input type="checkbox" class="burger-menu" id="check" />
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <section style="display: flex; flex-direction: column; align-items: start; justify-content: center;">
+        <h1>Javier Alonso<span style="color: #14a3b6;">.</span></h1>
+        <h2><span style="color: #14a3b6;">front-end</span> dev</h2>
+    </section>
+</div>
+<div class="menu" [ngClass]="{'menuVisible': menuVisible}">
+    <section class="selectLang">
+        <img src="assets/images/eng.png" alt="English" class="lang-flag">
+        <label class="switch" (click)="toggleLanguage()">
+            <input type="checkbox" (click)="toggleLanguage()">
+            <span class="slider round"></span>
+        </label>
+        <img src="assets/images/esp.png" alt="Español" class="lang-flag">
+    </section>
+    <ul>
+        <li (click)="scrollToSection('projects')" (click)="closeMenu()">{{'projects' | translate}}</li>
+        <li (click)="scrollToSection('technologies')" (click)="closeMenu()">{{'technologies' | translate}}</li>
+        <li (click)="scrollToSection('aboutMe')" (click)="closeMenu()">{{'aboutMe' | translate}}</li>
+    </ul>
+    <section class="social-media">
+        <a target="_blank" href="https://www.linkedin.com/in/javier-alonso-502a59205/"><img
+                src="assets/svgs/LinkedIn.svg" alt="LinkedIn"></a>
+        <a target="_blank" href="https://github.com/jjavieralonso"><img src="assets/svgs/GitHub.svg" alt="GitHub"></a>
+        <a><img src="assets/images/Mail.png" alt="e-mail"></a>
+    </section>
+</div>

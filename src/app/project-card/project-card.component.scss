@@ -1,0 +1,118 @@
+.card-container {
+    margin: 0 auto;
+}
+
+.card-horizontal {
+    width: 671px;
+    display: flex;
+    align-items: center;
+}
+@media (max-width : 1280px) and (min-width : 900px){
+    .card-horizontal {
+        width: 486px;
+        height: fit-content;
+    }
+}
+@media (max-width : 899px) and (min-width : 768px){
+    .card-horizontal {
+        width: 430px;
+        height: fit-content;
+    }
+}
+.portada {
+    flex-basis: 33%;
+}
+.portada img{
+    border-radius: 4px;
+    border: 2px solid white;
+}
+
+.content {
+    flex-basis: 67%;
+    padding: 0 20px;
+}
+
+.titulo-tecnologias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-tecnologias h2 {
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.tecnologias img {
+    margin-left: 10px;
+}
+
+.project-description {
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.card-horizontal {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    filter: grayscale(1);
+    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.card-horizontal:hover {
+    transform: scale(1.05);
+    filter: none;
+    box-shadow: 0 8px 16px rgba(20, 165, 184, 0.2);
+}
+
+.portada img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 15px;
+}
+
+.titulo-tecnologias {
+    margin-bottom: 10px;
+}
+
+.tecnologias img {
+    margin-right: 5px;
+}
+
+.project-description {
+    margin-top: 15px;
+}
+
+
+
+.card-vertical{
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-vertical .portada img{
+    width: 100%;
+}
+.card-vertical .portada{
+    width: 46%;
+    margin-bottom: 24px;
+}

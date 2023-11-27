@@ -1,0 +1,44 @@
+<div class="right-column">
+    <br id="projects">
+    <br>
+    <section class="projects">
+        <app-project-card [titulo]="'Project Ninja'" [texto]="('project-1' | translate)"
+        [tecnologia1]="'assets/images/angular-2.png'" [tecnologia2]="'assets/images/ts.png'"
+            [portada]="'assets/images/project-ninja.jpg'"></app-project-card>
+
+        <app-project-card [titulo]="'DeliveryYa'" [texto]="('project-2' | translate)"
+        [tecnologia1]="'assets/images/angular-2.png'" [tecnologia2]="'assets/images/ts.png'"
+            [portada]="'assets/images/deliveryya.png'"></app-project-card>
+
+        <app-project-card [titulo]="'Shoes e-commerce'" [texto]="('project-3' | translate)"
+            [tecnologia1]="'assets/images/angular-2.png'" [tecnologia2]="'assets/images/ts.png'"
+            [portada]="'assets/images/ecommerce.png'"></app-project-card>
+
+        <app-project-card [titulo]="('project-4-title' | translate)" [texto]="('project-4' | translate)"
+            [tecnologia1]="'assets/images/javascript.png'" [tecnologia2]="'assets/images/html5.png'"
+            [portada]="'assets/images/30d30p.png'"></app-project-card>
+    </section>
+    <br id="technologies">
+    <br>
+    <div>
+        <section class="technologies">
+            <img src="assets/images/angular-2.png" alt="Angular">
+            <img src="assets/images/ts.png" alt="TypeScript">
+            <img src="assets/images/javascript.png" alt="JavaScript">
+            <img src="assets/images/html5.png" alt="HTML5">
+            <img src="assets/images/css3.png" alt="CSS3">
+            <img src="assets/images/git.png" alt="Git">
+            <img src="assets/images/java.png" alt="Java">
+            <img src="assets/images/php.png" alt="PHP">
+        </section>
+    </div>
+    <br id="aboutMe">
+    <br>
+    <article class="intro-text" >
+        <p>{{'intro-1' | translate}}</p>
+        <p>{{'intro-2' | translate}}</p>
+        <p>{{'intro-4' | translate}}</p>
+        <p>{{'intro-5' | translate}}</p>
+        <p>{{'intro-3' | translate}}<img src="assets/images/emoji.png" [width]="28" [height]="28"></p>
+    </article>
+</div>

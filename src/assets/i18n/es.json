@@ -1,0 +1,16 @@
+{
+    "aboutMe": "sobre mi",
+    "projects": "proyectos",
+    "technologies": "tecnologias",
+    "intro-1": "· 21 años.",
+    "intro-2": "· Estudiando TUDAI (Tecnicatura Universitaria en Desarrollo de Aplicaciones Informaticas) en UNICEN, Tandil, Argentina.",
+    "intro-3": "· No todo es código, asi que aparte de eso, me vas a encontrar o bien escuchando musica, mirando un partido de fútbol o bien jugando algun videojuego. ",
+    "intro-4": "· Ingles: Nivel C2, con certificado de EFSET.",
+    "intro-5": "· Español: nativo.",
+
+    "project-1": "Trabajo realizado como proyecto para 'No country', desarrollando una aplicación al estilo de Jira como herramienta de gestión de proyectos. Con un equipo multidisciplinario, me desempeñé como Desarrollador Front-End utilizando Angular como el framework.",
+    "project-2": "Trabajo realizado como proyecto para 'No country', desarrollando una aplicación para delivery y pedido de comida. Con un equipo multidisciplinario, me desempeñé como Desarrollador Front-End utilizando Angular como el framework.",
+    "project-3": "Proyecto personal de una plataforma de comercio electrónico especializada en zapatillas, implementada con el patrón de diseño Modelo-Vista-Controlador (MVC).",
+    "project-4": "Un proyecto personal y un desafío para desarrollar 30 proyectos en HTML, CSS y JavaScript en 30 días. El objetivo es mejorar las habilidades fundamentales de la tríada del front-end.",
+    "project-4-title": "30 dias 30 proyectos"
+}

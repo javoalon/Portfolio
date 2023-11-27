@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+}
+
+app-navbar {
+    position: fixed;
+    top: 128px;
+    left: 15%;
+    z-index: 2;
+}
+
+app-info-column {
+    max-width: 60%;
+    position: absolute;
+    top: 50px;
+    right: 15%;
+    z-index: 1;
+}
+
+@media only screen and (max-width : 1600px) {
+    app-info-column {
+        right: 5%;
+    }
+
+    app-navbar {
+        left: 5%;
+    }
+}
+
+@media only screen and (max-width : 1360px) {
+    app-navbar {
+        top: 64px;
+    }
+}
+
+@media only screen and (max-width : 769px) {
+    app-navbar {
+        min-width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    app-info-column {
+        position: inherit;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: inherit;
+        margin-top: 0px;
+    }
+}

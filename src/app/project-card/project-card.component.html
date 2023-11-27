@@ -1,0 +1,32 @@
+<div class="card-container">
+    <div class="card-horizontal" *ngIf="!isMobile">
+        <div class="portada">
+            <img [src]="portada" alt="Portada" width="250" height="142">
+        </div>
+        <div class="content">
+            <div class="titulo-tecnologias">
+                <h2>{{ titulo }}</h2>
+                <div class="tecnologias">
+                    <img [src]="tecnologia1" alt="Tecnología 1" width="35" height="35">
+                    <img [src]="tecnologia2" alt="Tecnología 2" width="35" height="35">
+                </div>
+            </div>
+            <p class="project-description">{{ texto }}</p>
+        </div>
+    </div>
+
+
+    <div class="card-vertical" *ngIf="isMobile">
+        <div class="portada">
+            <img [src]="portada" alt="Portada" width="250" height="142">
+        </div>
+        <div class="titulo-tecnologias">
+            <h2>{{ titulo }}</h2>
+            <div class="tecnologias">
+                <img [src]="tecnologia1" alt="Tecnología 1" width="35" height="35">
+                <img [src]="tecnologia2" alt="Tecnología 2" width="35" height="35">
+            </div>
+        </div>
+        <p class="project-description">{{ texto }}</p>
+    </div>
+</div>

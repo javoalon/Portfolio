@@ -1,0 +1,16 @@
+{
+    "aboutMe": "about me",
+    "projects": "projects",
+    "technologies": "technologies",
+    "intro-1": "· 21 years old.",
+    "intro-2": "· Studying TUDAI (Tecnicatura Universitaria en Desarrollo de Aplicaciones Informaticas) at UNICEN, Tandil, Argentina.",
+    "intro-3": "· Aside from coding, you will find me, either listening to music, watching a football match, or playing a video game. ",
+    "intro-4": "· English: Level C2, with EFSET Certificate.",
+    "intro-5": "· Spanish: Native.",
+
+    "project-1": "Work carried out as a project for 'No country', developing an application in the style of Jira as a project management tool. With a multidisciplinary team, I was the Front-End Developer using Angular as the framework. ",
+    "project-2": "Work carried out as a project for 'No country', developing a food ordering and delivery application. With a multidisciplinary team, I was the Front-End Developer using Angular as the framework.",
+    "project-3": "Personal project of an e-commerce platform specializing in sneakers, implemented with the Model-View-Controller (MVC) design pattern.",
+    "project-4": "A personal project and challenge to develop 30 projects in HTML, CSS, and JavaScript within 30 days. The goal is to enhance the foundational skills of the front-end trinity.",
+    "project-4-title": "30 days 30 projects"
+}
